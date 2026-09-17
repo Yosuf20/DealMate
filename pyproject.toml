@@ -7,7 +7,9 @@ authors = [
     { name = "Yosuf20", email = "jyosuf6@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "strands-agents>=1.56.0",
+]
 
 [project.scripts]
 1st = "1st:main"
