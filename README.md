@@ -167,8 +167,6 @@ uv run flask --app app run --debug
 
 Open `http://localhost:5000`.
 
-> Update steps 3 to 5 if your commands or folder names are different.
-
 ## Demo notes
 
 - Online prices and close match logic use live web search results.
