@@ -1,5 +1,17 @@
+import sys
+import os
+
+# seller-backend has a hyphen in its folder name, so it can't be imported
+# as a normal Python package — add it to the path directly instead.
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "seller-backend"))
+
 from flask import Flask, render_template
 from mock_data import MOCK_RESULT
+from src.services.nearby_stores import build_nearby_stores
+from src.demo_data import (
+    DEMO_SELLERS, DEMO_QUOTES, DEMO_USER_LAT, DEMO_USER_LON,
+    DEMO_USER_PINCODE, DEMO_QUOTE_REQUEST_ID,
+)
 
 app = Flask(__name__)
 
@@ -10,7 +22,7 @@ def process_result(result):
     for index, source in enumerate(pc["sources"]):
         source["is_best"] = index == 0
         source["price_formatted"] = f"₹{source['price']:,}"
-    
+
     pc["lowest_price"] = pc["sources"][0]["price"]
     pc["lowest_price_store"] = pc["sources"][0]["store"]
     pc["lowest_price_formatted"] = f"₹{pc['lowest_price']:,}"
@@ -19,6 +31,13 @@ def process_result(result):
     full_stars = round(rs["rating_avg"])
     rs["stars_full"] = full_stars
     rs["stars_empty"] = 5 - full_stars
+
+    # --- real seller-backend logic replaces the hardcoded nearby_stores ---
+    result["nearby_stores"] = build_nearby_stores(
+        DEMO_USER_LAT, DEMO_USER_LON, DEMO_USER_PINCODE,
+        sellers=DEMO_SELLERS, quotes=DEMO_QUOTES,
+        quote_request_id=DEMO_QUOTE_REQUEST_ID,
+    )
 
     return result
 
