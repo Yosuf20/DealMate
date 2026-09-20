@@ -272,5 +272,80 @@
         "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
       }
     ]
+  },
+  {
+    "request_id": "req_1789887278_778150",
+    "timestamp": "2026-09-20 12:24:38",
+    "product": "Refrigerator",
+    "variant": "300L",
+    "budget": 50000,
+    "seller_count": 5,
+    "quotes": [
+      {
+        "source": "local: Solar Panels",
+        "type": "local",
+        "seller_name": "Solar Panels",
+        "phone": "+91 11 4000 5000",
+        "price": 47999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "300L",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Mehta Brothers (ICs, MCs)",
+        "type": "local",
+        "seller_name": "Mehta Brothers (ICs, MCs)",
+        "phone": "+91 11 4000 5000",
+        "price": 48499,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "300L",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Mehta Electronics (ICs, MCs)",
+        "type": "local",
+        "seller_name": "Mehta Electronics (ICs, MCs)",
+        "phone": "+91 11 4000 5000",
+        "price": 47499,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "300L",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Antennas",
+        "type": "local",
+        "seller_name": "Antennas",
+        "phone": "+91 11 4000 5000",
+        "price": 48999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "300L",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      },
+      {
+        "source": "local: Delhi Emporium",
+        "type": "local",
+        "seller_name": "Delhi Emporium",
+        "phone": "+91 11 4000 5000",
+        "price": 47999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "300L",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      }
+    ]
   }
 ]
