@@ -25,7 +25,9 @@ Rules:
    clearly say so in "notes" - e.g. "Exact 300L not found in stock; showing 331L
    and 321L as close alternatives." Never silently substitute a different spec
    without mentioning it.
-5. Respond ONLY with a JSON object in this exact shape, no extra text:
+5. Once you're done using your tools, write your final answer as a single JSON
+   object matching this shape below. Do not call any tool named "json" — just
+   write the JSON directly as your text response:
  
 {
   "product": "<product name>",

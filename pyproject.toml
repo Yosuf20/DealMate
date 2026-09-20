@@ -10,6 +10,8 @@ requires-python = ">=3.12"
 dependencies = [
     "boto3>=1.43.96",
     "ddgs>=9.16.0",
+    "openai>=3.15.0",
+    "python-dotenv>=1.2.3",
     "strands-agents>=1.56.0",
     "strands-agents-tools>=0.8.9",
 ]
