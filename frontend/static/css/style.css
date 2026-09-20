@@ -1,0 +1,308 @@
+/* ==========================================================
+   DealMate — design tokens
+   Light, glassmorphic. Accent color is reserved for signaling
+   an actual best price/deal — not used decoratively elsewhere.
+   ========================================================== */
+:root {
+  --bg-start: #EAF4FB;
+  --bg-end: #F1ECFB;
+  --glass: rgba(255, 255, 255, 0.55);
+  --glass-strong: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --text-primary: #1E2A38;
+  --text-secondary: #5B6B7C;
+  --accent: #2FBF8F;
+  --radius: 20px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.25;
+}
+
+p, li { line-height: 1.6; color: var(--text-secondary); }
+a { color: var(--text-primary); }
+ul { margin: 0; padding: 0; list-style: none; }
+
+/* ---------- Page shell (results page only — no page-level scroll) ---------- */
+.app-shell {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ---------- Nav ---------- */
+.site-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 2rem;
+  background: var(--glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(47, 191, 143, 0.15);
+}
+
+/* ---------- Glass surfaces ---------- */
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(31, 42, 56, 0.08);
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.glass-card--primary {
+  background: var(--glass-strong);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 12px 40px rgba(31, 42, 56, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.glass-card::-webkit-scrollbar { width: 5px; }
+.glass-card::-webkit-scrollbar-thumb {
+  background: rgba(30, 42, 56, 0.15);
+  border-radius: 999px;
+}
+
+.glass-card h2 {
+  font-size: 1.05rem;
+  margin-bottom: 0.9rem;
+}
+
+/* ---------- Badges ---------- */
+.badge-best {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+}
+
+/* ---------- Price hero (the emphasized lowest price) ---------- */
+.price-hero {
+  padding-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(30, 42, 56, 0.08);
+}
+
+.price-hero__label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.15rem;
+}
+
+.price-hero__value {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.price-hero__store {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Sora', sans-serif;
+  color: var(--accent);
+}
+
+.source-list { flex: 1; }
+
+.source-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(30, 42, 56, 0.06);
+  font-size: 0.92rem;
+}
+
+.source-row:last-child { border-bottom: none; }
+.source-row__price { font-weight: 600; color: var(--text-primary); }
+
+/* ---------- Rating stars ---------- */
+.stars {
+  color: var(--accent);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.review-list li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid rgba(30, 42, 56, 0.06);
+  font-size: 0.92rem;
+}
+.review-list li:last-child { border-bottom: none; }
+
+/* ---------- Hero / search (landing page) ---------- */
+.hero {
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.hero h1 { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.hero p { font-size: 1.05rem; margin-bottom: 2rem; }
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 999px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.75rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.search-bar button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  background: var(--text-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ---------- Loading / agent researching screen ---------- */
+.loading-shell {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-card {
+  text-align: center;
+  padding: 2.5rem 3rem;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  border: 4px solid rgba(30, 42, 56, 0.1);
+  border-top-color: var(--accent);
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-status {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  min-height: 1.5em;
+}
+
+/* ---------- Results grid ----------
+   Price card carries more visual weight — it's the USP.
+   Rows are fr-based so the whole grid fills the viewport
+   instead of stretching to the tallest card's content. */
+.results-header {
+  flex: 0 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem 0;
+}
+
+.results-header h1 { font-size: 1.4rem; }
+
+.results-main {
+  flex: 1;
+  min-height: 0;
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.results-grid {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.8fr;
+  grid-template-areas:
+    "price   price   review"
+    "price   price   nearby"
+    "similar related sales";
+  gap: 1rem;
+}
+
+.card-price    { grid-area: price; }
+.card-review   { grid-area: review; }
+.card-nearby   { grid-area: nearby; }
+.card-similar  { grid-area: similar; }
+.card-related  { grid-area: related; }
+.card-sales    { grid-area: sales; }
+
+@media (max-width: 800px) {
+  .app-shell { height: auto; overflow: visible; }
+  .results-grid {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "price" "review" "nearby" "similar" "related" "sales";
+  }
+}

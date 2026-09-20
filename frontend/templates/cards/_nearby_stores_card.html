@@ -1,0 +1,19 @@
+<div class="glass-card card-nearby">
+  <h2>Nearby Stores ({{ result.nearby_stores.radius_km }}km)</h2>
+
+  <ul class="review-list">
+    {% for store in result.nearby_stores.stores %}
+    <li>
+      <a href="{{ store.maps_url }}" target="_blank">{{ store.store_name }}</a>
+      · {{ store.distance_km }}km
+      {% if store.quote_status == "received" %}
+        · ₹{{ '{:,}'.format(store.price) }}
+      {% elif store.quote_status == "pending" %}
+        · quote pending
+      {% else %}
+        · not requested
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+<div class="glass-card card-related">
+  <h2>Related Products</h2>
+
+  <ul class="review-list">
+    {% for item in result.related_products[:3] %}
+    <li>{{ item.name }} — ₹{{ '{:,}'.format(item.price) }}</li>
+    {% endfor %}
+  </ul>
+</div>

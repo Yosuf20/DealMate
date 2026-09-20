@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DealMate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <span class="brand"><span class="brand-dot"></span>DealMate</span>
+    <!-- TODO: nav links once we have more than one page -->
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Find the best deal, online or nearby.</h1>
+      <p>Search a product and DealMate compares prices across the web and your local stores.</p>
+
+      <!-- TODO: this form should eventually trigger the Product Agent's
+           clarifying questions before going to /results -->
+      <form action="/searching" method="get" class="search-bar glass-card">
+        <input type="text" name="query" placeholder="Search for a product...">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

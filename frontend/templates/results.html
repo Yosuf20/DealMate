@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DealMate — Results</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="app-shell">
+
+  <nav class="site-nav">
+    <span class="brand"><span class="brand-dot"></span>DealMate</span>
+    <!-- TODO: nav links -->
+  </nav>
+
+  <header class="results-header">
+    <h1>{{ result.query.product_name }}</h1>
+  </header>
+
+  <main class="results-main">
+    <div class="results-grid">
+      {% include "cards/_price_card.html" %}
+      {% include "cards/_review_card.html" %}
+      {% include "cards/_nearby_stores_card.html" %}
+      {% include "cards/_similar_product_card.html" %}
+      {% include "cards/_related_products_card.html" %}
+      {% include "cards/_sales_card.html" %}
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

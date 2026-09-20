@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DealMate — Searching</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <div class="loading-shell">
+    <div class="glass-card glass-card--primary loading-card">
+      <div class="spinner"></div>
+      <div class="loading-status" id="statusText">Searching online stores...</div>
+    </div>
+  </div>
+
+  <script>
+    // Rotates through the agent's steps for a few seconds, then moves on
+    // to /results. Once the real Supervisor Agent is wired in, this can
+    // be replaced with actual step events from its activity log instead
+    // of a fixed, faked sequence.
+    const steps = [
+      "Searching online stores...",
+      "Checking Amazon, Flipkart, Croma...",
+      "Finding nearby local stores...",
+      "Requesting local quotes...",
+      "Comparing deals..."
+    ];
+    let i = 0;
+    const statusEl = document.getElementById("statusText");
+    const interval = setInterval(() => {
+      i = (i + 1) % steps.length;
+      statusEl.textContent = steps[i];
+    }, 700);
+
+    setTimeout(() => {
+      clearInterval(interval);
+      window.location.href = "/results" + window.location.search;
+    }, 3500);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<div class="glass-card card-review">
+  <h2>General Review</h2>
+
+  <p>
+    <span class="stars">{{ '★' * result.review_summary.stars_full }}{{ '☆' * result.review_summary.stars_empty }}</span>
+    &nbsp;{{ result.review_summary.rating_avg }} · {{ result.review_summary.review_count_analyzed }} reviews
+  </p>
+
+  <ul class="review-list">
+    {% for point in result.review_summary.highlights[:2] %}
+    <li>{{ point }}</li>
+    {% endfor %}
+    {% for key, value in result.review_summary.category_specific.items() %}
+      {% if loop.index <= 2 %}
+      <li>{{ key|capitalize }}: {{ value }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

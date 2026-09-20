@@ -1,0 +1,9 @@
+<div class="glass-card card-sales">
+  <h2>Upcoming Sales</h2>
+
+  <ul class="review-list">
+    {% for sale in result.upcoming_sales[:2] %}
+    <li>{{ sale.sale_name }} — {{ sale.expected_start }}</li>
+    {% endfor %}
+  </ul>
+</div>

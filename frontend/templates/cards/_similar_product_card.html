@@ -1,0 +1,13 @@
+<div class="glass-card card-similar">
+  <h2>Similar Product</h2>
+
+  {% set alt = result.similar_product.suggested_product %}
+  <p>Reason: {{ result.similar_product.reason|replace('_', ' ') }}</p>
+  <p>{{ alt.name }} — ₹{{ '{:,}'.format(alt.price) }}</p>
+
+  <ul class="review-list">
+    {% for diff in alt.key_differences[:2] %}
+    <li>{{ diff }}</li>
+    {% endfor %}
+  </ul>
+</div>
