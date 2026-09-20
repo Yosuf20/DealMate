@@ -21,7 +21,6 @@ MOCK_RESULT = {
     },
 
     # CARD 1: Price comparison — lowest-price highlight and chart
-    # share this one array so the "big number" is just min(sources.price)
     "price_comparison": {
         "sources": [
             {"store": "Amazon", "price": 124999, "url": "https://amazon.in/dp/example"},
@@ -30,8 +29,8 @@ MOCK_RESULT = {
             {"store": "Croma", "price": 128499, "url": "https://croma.com/example"},
             {"store": "Vijay Sales", "price": 127999, "url": "https://vijaysales.com/example"}
         ],
-        "lowest_price": 124999,          # derived: min(sources.price)
-        "lowest_price_store": "Amazon"   # derived: store with min price
+        "lowest_price": 124999,          
+        "lowest_price_store": "Amazon"   
     },
 
     # CARD 2: General review summary
@@ -44,7 +43,6 @@ MOCK_RESULT = {
             "Battery life praised for all-day use",
             "Some complaints about the price being high"
         ],
-        # category-specific fields will vary by product type (electronics shown here)
         "category_specific": {
             "battery": "Excellent, lasts 1.5 days on average use",
             "performance": "Very fast, handles gaming well",
