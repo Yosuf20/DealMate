@@ -1,8 +1,3 @@
-/* ==========================================================
-   DealMate — design tokens
-   Light, glassmorphic. Accent color is reserved for signaling
-   an actual best price/deal — not used decoratively elsewhere.
-   ========================================================== */
 :root {
   --bg-start: #EAF4FB;
   --bg-end: #F1ECFB;
@@ -38,7 +33,6 @@ p, li { line-height: 1.6; color: var(--text-secondary); }
 a { color: var(--text-primary); }
 ul { margin: 0; padding: 0; list-style: none; }
 
-/* ---------- Page shell (results page only — no page-level scroll) ---------- */
 .app-shell {
   height: 100vh;
   display: flex;
@@ -256,10 +250,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   min-height: 1.5em;
 }
 
-/* ---------- Results grid ----------
-   Price card carries more visual weight — it's the USP.
-   Rows are fr-based so the whole grid fills the viewport
-   instead of stretching to the tallest card's content. */
 .results-header {
   flex: 0 0 auto;
   max-width: 1200px;
