@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SellerQuote",
+  "description": "A seller's response to a quote request for a product.",
+  "type": "object",
+  "required": ["quote_id", "quote_request_id", "seller_id", "price", "currency", "in_stock", "created_at"],
+  "properties": {
+    "quote_id": { "type": "string", "description": "Unique ID for this quote" },
+    "quote_request_id": { "type": "string", "description": "ID of the QuoteRequest this responds to" },
+    "seller_id": { "type": "string" },
+    "product_name": { "type": "string" },
+    "price": { "type": "number", "minimum": 0 },
+    "currency": { "type": "string", "default": "INR" },
+    "in_stock": { "type": "boolean" },
+    "quantity_available": { "type": "integer", "minimum": 0 },
+    "notes": { "type": "string", "description": "Optional free text from seller (e.g. 'pickup only')" },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QuoteRequest",
+  "description": "A request from the agent asking local sellers to quote a product.",
+  "type": "object",
+  "required": ["quote_request_id", "product_name", "category", "created_at"],
+  "properties": {
+    "quote_request_id": { "type": "string" },
+    "product_name": { "type": "string" },
+    "category": {
+      "type": "string",
+      "description": "Generic category, not hardcoded — e.g. 'electronics', 'shoes', 'cosmetics'"
+    },
+    "specifications": {
+      "type": "object",
+      "description": "Free-form key/value spec pairs, e.g. {'RAM': '8GB', 'size': '9 UK'}",
+      "additionalProperties": true
+    },
+    "user_location": {
+      "type": "object",
+      "properties": {
+        "lat": { "type": "number" },
+        "lng": { "type": "number" },
+        "city": { "type": "string" }
+      }
+    },
+    "max_price": { "type": "number", "description": "Optional budget ceiling from user" },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}

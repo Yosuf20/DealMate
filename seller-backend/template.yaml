@@ -1,0 +1,149 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: DealSetu seller-backend — quote requests, seller quotes, seller CRUD
+
+Globals:
+  Function:
+    Runtime: python3.12
+    Timeout: 10
+    MemorySize: 256
+    Environment:
+      Variables:
+        SELLER_TABLE: !Ref SellerTable
+        QUOTE_REQUEST_TABLE: !Ref QuoteRequestTable
+        QUOTE_TABLE: !Ref QuoteTable
+        PRODUCT_CATALOG_TABLE: !Ref ProductCatalogTable
+        PRICE_HISTORY_TABLE: !Ref PriceHistoryTable
+
+Resources:
+
+  # ---------------- Functions ----------------
+  CreateQuoteRequestFn:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src.handlers.create_quote_request.handler
+      CodeUri: .
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /quote-requests
+            Method: post
+
+  SubmitQuoteFn:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src.handlers.submit_quote.handler
+      CodeUri: .
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /quotes
+            Method: post
+
+  GetQuotesFn:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src.handlers.get_quotes.handler
+      CodeUri: .
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /quote-requests/{quote_request_id}/quotes
+            Method: get
+
+  CreateSellerFn:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src.handlers.seller_crud.create_seller
+      CodeUri: .
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /sellers
+            Method: post
+
+  GetSellerFn:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src.handlers.seller_crud.get_seller
+      CodeUri: .
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /sellers/{seller_id}
+            Method: get
+
+  # ---------------- Tables ----------------
+  SellerTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: dealsetu-sellers
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: seller_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: seller_id
+          KeyType: HASH
+
+  QuoteRequestTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: dealsetu-quote-requests
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: quote_request_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: quote_request_id
+          KeyType: HASH
+
+  QuoteTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: dealsetu-quotes
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: quote_id
+          AttributeType: S
+        - AttributeName: quote_request_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: quote_id
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: quote_request_id-index
+          KeySchema:
+            - AttributeName: quote_request_id
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+
+  ProductCatalogTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: dealsetu-product-catalog
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: product_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: product_id
+          KeyType: HASH
+
+  PriceHistoryTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: dealsetu-price-history
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: history_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: history_id
+          KeyType: HASH
