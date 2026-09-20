@@ -22,9 +22,12 @@
       <!-- TODO: this form should eventually trigger the Product Agent's
            clarifying questions before going to /results -->
       <form action="/searching" method="get" class="search-bar glass-card">
-        <input type="text" name="query" placeholder="Search for a product...">
+        <input type="text" name="query" value="{{ query or '' }}" placeholder="Search for a product...">
         <button type="submit">Search</button>
       </form>
+      {% if error %}
+      <p class="search-error">{{ error }}</p>
+      {% endif %}
     </section>
   </main>
 

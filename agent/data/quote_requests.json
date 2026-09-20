@@ -347,5 +347,540 @@
         "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
       }
     ]
+  },
+  {
+    "request_id": "req_1789914193_a450a1",
+    "timestamp": "2026-09-20 19:53:13",
+    "product": "Refrigerator",
+    "variant": "330 litre",
+    "budget": 50000,
+    "seller_count": 4,
+    "quotes": [
+      {
+        "source": "local: Croma - Connaught Place",
+        "type": "local",
+        "seller_name": "Croma - Connaught Place",
+        "phone": "+91 11 4151 2222",
+        "price": 47999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Reliance Digital - South Extension",
+        "type": "local",
+        "seller_name": "Reliance Digital - South Extension",
+        "phone": "+91 11 4654 3333",
+        "price": 48499,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Vijay Sales - Lajpat Nagar",
+        "type": "local",
+        "seller_name": "Vijay Sales - Lajpat Nagar",
+        "phone": "+91 11 4172 8888",
+        "price": 47499,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Unicorn Apple Premium Reseller - DLF Promenade",
+        "type": "local",
+        "seller_name": "Unicorn Apple Premium Reseller - DLF Promenade",
+        "phone": "+91 98100 12345",
+        "price": 48999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      }
+    ]
+  },
+  {
+    "request_id": "req_1789914318_cd0053",
+    "timestamp": "2026-09-20 19:55:18",
+    "product": "Refrigerator",
+    "variant": "330 litre",
+    "budget": 50000,
+    "seller_count": 5,
+    "quotes": [
+      {
+        "source": "local: Solar Panels",
+        "type": "local",
+        "seller_name": "Solar Panels",
+        "phone": "+91 11 4000 5000",
+        "price": 47999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Mehta Brothers (ICs, MCs)",
+        "type": "local",
+        "seller_name": "Mehta Brothers (ICs, MCs)",
+        "phone": "+91 11 4000 5000",
+        "price": 48499,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Mehta Electronics (ICs, MCs)",
+        "type": "local",
+        "seller_name": "Mehta Electronics (ICs, MCs)",
+        "phone": "+91 11 4000 5000",
+        "price": 47499,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Antennas",
+        "type": "local",
+        "seller_name": "Antennas",
+        "phone": "+91 11 4000 5000",
+        "price": 48999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      },
+      {
+        "source": "local: Delhi Emporium",
+        "type": "local",
+        "seller_name": "Delhi Emporium",
+        "phone": "+91 11 4000 5000",
+        "price": 47999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      }
+    ]
+  },
+  {
+    "request_id": "req_1789914463_503490",
+    "timestamp": "2026-09-20 19:57:43",
+    "product": "Refrigerator",
+    "variant": "330 litre",
+    "budget": 50000,
+    "seller_count": 4,
+    "quotes": [
+      {
+        "source": "local: Croma - Connaught Place",
+        "type": "local",
+        "seller_name": "Croma - Connaught Place",
+        "phone": "+91 11 4151 2222",
+        "price": 47999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Reliance Digital - South Extension",
+        "type": "local",
+        "seller_name": "Reliance Digital - South Extension",
+        "phone": "+91 11 4654 3333",
+        "price": 48499,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Vijay Sales - Lajpat Nagar",
+        "type": "local",
+        "seller_name": "Vijay Sales - Lajpat Nagar",
+        "phone": "+91 11 4172 8888",
+        "price": 47499,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Unicorn Apple Premium Reseller - DLF Promenade",
+        "type": "local",
+        "seller_name": "Unicorn Apple Premium Reseller - DLF Promenade",
+        "phone": "+91 98100 12345",
+        "price": 48999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "330 litre",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      }
+    ]
+  },
+  {
+    "request_id": "req_1789914631_095e89",
+    "timestamp": "2026-09-20 20:00:31",
+    "product": "TV",
+    "variant": "32 inch",
+    "budget": 40000,
+    "seller_count": 4,
+    "quotes": [
+      {
+        "source": "local: Croma - Connaught Place",
+        "type": "local",
+        "seller_name": "Croma - Connaught Place",
+        "phone": "+91 11 4151 2222",
+        "price": 38399,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "32 inch",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Reliance Digital - South Extension",
+        "type": "local",
+        "seller_name": "Reliance Digital - South Extension",
+        "phone": "+91 11 4654 3333",
+        "price": 38799,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "32 inch",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Vijay Sales - Lajpat Nagar",
+        "type": "local",
+        "seller_name": "Vijay Sales - Lajpat Nagar",
+        "phone": "+91 11 4172 8888",
+        "price": 37999,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "32 inch",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Unicorn Apple Premium Reseller - DLF Promenade",
+        "type": "local",
+        "seller_name": "Unicorn Apple Premium Reseller - DLF Promenade",
+        "phone": "+91 98100 12345",
+        "price": 39199,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "32 inch",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      }
+    ]
+  },
+  {
+    "request_id": "req_1789915356_b8c6d4",
+    "timestamp": "2026-09-20 20:12:36",
+    "product": "Samsung S24 Ultra",
+    "variant": null,
+    "budget": 100000,
+    "seller_count": 4,
+    "quotes": [
+      {
+        "source": "local: Croma - Connaught Place",
+        "type": "local",
+        "seller_name": "Croma - Connaught Place",
+        "phone": "+91 11 4151 2222",
+        "price": 95999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Reliance Digital - South Extension",
+        "type": "local",
+        "seller_name": "Reliance Digital - South Extension",
+        "phone": "+91 11 4654 3333",
+        "price": 96999,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Vijay Sales - Lajpat Nagar",
+        "type": "local",
+        "seller_name": "Vijay Sales - Lajpat Nagar",
+        "phone": "+91 11 4172 8888",
+        "price": 94999,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Unicorn Apple Premium Reseller - DLF Promenade",
+        "type": "local",
+        "seller_name": "Unicorn Apple Premium Reseller - DLF Promenade",
+        "phone": "+91 98100 12345",
+        "price": 97999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      }
+    ]
+  },
+  {
+    "request_id": "req_1789915433_57489b",
+    "timestamp": "2026-09-20 20:13:53",
+    "product": "Samsung S24 Ultra",
+    "variant": null,
+    "budget": 100000,
+    "seller_count": 5,
+    "quotes": [
+      {
+        "source": "local: Solar Panels",
+        "type": "local",
+        "seller_name": "Solar Panels",
+        "phone": "+91 11 4000 5000",
+        "price": 95999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Mehta Brothers (ICs, MCs)",
+        "type": "local",
+        "seller_name": "Mehta Brothers (ICs, MCs)",
+        "phone": "+91 11 4000 5000",
+        "price": 96999,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Mehta Electronics (ICs, MCs)",
+        "type": "local",
+        "seller_name": "Mehta Electronics (ICs, MCs)",
+        "phone": "+91 11 4000 5000",
+        "price": 94999,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Antennas",
+        "type": "local",
+        "seller_name": "Antennas",
+        "phone": "+91 11 4000 5000",
+        "price": 97999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      },
+      {
+        "source": "local: Delhi Emporium",
+        "type": "local",
+        "seller_name": "Delhi Emporium",
+        "phone": "+91 11 4000 5000",
+        "price": 95999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      }
+    ]
+  },
+  {
+    "request_id": "req_1789915499_23d4c5",
+    "timestamp": "2026-09-20 20:14:59",
+    "product": "TV",
+    "variant": "32 inch",
+    "budget": 40000,
+    "seller_count": 4,
+    "quotes": [
+      {
+        "source": "local: Croma - Connaught Place",
+        "type": "local",
+        "seller_name": "Croma - Connaught Place",
+        "phone": "+91 11 4151 2222",
+        "price": 38399,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "32 inch",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Reliance Digital - South Extension",
+        "type": "local",
+        "seller_name": "Reliance Digital - South Extension",
+        "phone": "+91 11 4654 3333",
+        "price": 38799,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "32 inch",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Vijay Sales - Lajpat Nagar",
+        "type": "local",
+        "seller_name": "Vijay Sales - Lajpat Nagar",
+        "phone": "+91 11 4172 8888",
+        "price": 37999,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "32 inch",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Unicorn Apple Premium Reseller - DLF Promenade",
+        "type": "local",
+        "seller_name": "Unicorn Apple Premium Reseller - DLF Promenade",
+        "phone": "+91 98100 12345",
+        "price": 39199,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "32 inch",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      }
+    ]
+  },
+  {
+    "request_id": "req_1789915663_b9bcf2",
+    "timestamp": "2026-09-20 20:17:43",
+    "product": "mouse",
+    "variant": null,
+    "budget": 10000,
+    "seller_count": 5,
+    "quotes": [
+      {
+        "source": "local: Solar Panels",
+        "type": "local",
+        "seller_name": "Solar Panels",
+        "phone": "+91 11 4000 5000",
+        "price": 9599,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Mehta Brothers (ICs, MCs)",
+        "type": "local",
+        "seller_name": "Mehta Brothers (ICs, MCs)",
+        "phone": "+91 11 4000 5000",
+        "price": 9699,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Mehta Electronics (ICs, MCs)",
+        "type": "local",
+        "seller_name": "Mehta Electronics (ICs, MCs)",
+        "phone": "+91 11 4000 5000",
+        "price": 9499,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Antennas",
+        "type": "local",
+        "seller_name": "Antennas",
+        "phone": "+91 11 4000 5000",
+        "price": 9799,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      },
+      {
+        "source": "local: Delhi Emporium",
+        "type": "local",
+        "seller_name": "Delhi Emporium",
+        "phone": "+91 11 4000 5000",
+        "price": 9599,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      }
+    ]
   }
 ]

@@ -29,7 +29,7 @@ load_dotenv()
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY") or os.environ.get("GROQ_API")
 GROQ_BASE_URL = "https://api.groq.com/openai/v1"
-GROQ_MODEL_ID = os.environ.get("GROQ_MODEL_ID", "openai/gpt-oss-120b")
+GROQ_MODEL_ID = os.environ.get("GROQ_MODEL_ID", "openai/gpt-oss-20b")
 
 # --- Bedrock config (kept for later, e.g. if you deploy for "Ship It") ---
 BEDROCK_MODEL_ID = os.environ.get(
