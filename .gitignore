@@ -10,3 +10,9 @@ wheels/
 .venv
 
 .env
+
+# WhatsApp linked-device credentials and local message state
+whatsapp-service/data/whatsapp-auth/
+whatsapp-service/data/whatsapp-messages.json
+agent/data/whatsapp-pending.json
+*.session
