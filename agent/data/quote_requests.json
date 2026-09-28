@@ -1068,5 +1068,80 @@
         "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
       }
     ]
+  },
+  {
+    "request_id": "req_1790601339_c5b831",
+    "timestamp": "2026-09-28 18:45:39",
+    "product": "Samsung S24 Ultra",
+    "variant": null,
+    "budget": 100000,
+    "seller_count": 5,
+    "quotes": [
+      {
+        "source": "local: Shopper's Stop",
+        "type": "local",
+        "seller_name": "Shopper's Stop",
+        "phone": null,
+        "price": 95999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      },
+      {
+        "source": "local: Micromax Service Center",
+        "type": "local",
+        "seller_name": "Micromax Service Center",
+        "phone": "097 02 540638",
+        "price": 96999,
+        "delivery": "Instant Store Pickup Today (Ready in 30 mins)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Brand sealed pack. Instant invoice with GST input tax credit available."
+      },
+      {
+        "source": "local: Fenchi",
+        "type": "local",
+        "seller_name": "Fenchi",
+        "phone": null,
+        "price": 94999,
+        "delivery": "Same-day express local delivery (< 3 hrs)",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Card cashback match + instant unboxing & device verification."
+      },
+      {
+        "source": "local: Vijay Sales",
+        "type": "local",
+        "seller_name": "Vijay Sales",
+        "phone": null,
+        "price": 97999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Includes free 1-year screen protection plan & bundle discount on accessories."
+      },
+      {
+        "source": "local: HP World",
+        "type": "local",
+        "seller_name": "HP World",
+        "phone": null,
+        "price": 95999,
+        "delivery": "Instant Store Pickup Today",
+        "warranty": "1 Year Official Brand Warranty (Brand Authorized)",
+        "availability": "available_today",
+        "match_type": "exact",
+        "detected_spec": "Standard",
+        "notes": "Official Apple Authorised Partner. Free tempered glass & in-store data transfer."
+      }
+    ]
   }
 ]
