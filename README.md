@@ -167,6 +167,21 @@ uv run flask --app app run --debug
 
 Open `http://localhost:5000`.
 
+## WhatsApp seller outreach (demo)
+
+The project includes an optional Node.js service under `whatsapp-service/` that uses a linked WhatsApp Web-style session through Baileys. Use a separate demo WhatsApp account; do not link a personal account or commit the generated session files.
+
+1. Copy `.env.example` to `.env` and keep `WHATSAPP_AUTO_SEND=false` for approval-first sending.
+2. Install the service dependencies with `npm install --prefix whatsapp-service`.
+3. Start the service with `npm start --prefix whatsapp-service`.
+4. Start the agent API and frontend as described above.
+5. Open the results page, click **Connect WhatsApp**, then scan the QR using **WhatsApp > Linked Devices > Link a Device**.
+6. Review each generated seller message and click **Send WhatsApp** or **Cancel**.
+
+The Node service exposes its internal API on `http://localhost:3001`. The Python API proxies status and approval operations at `/whatsapp/status`, `/whatsapp/connect`, `/whatsapp/disconnect`, `/whatsapp/pending`, and `/whatsapp/pending/{id}/send`. Authentication state is stored under `whatsapp-service/data/` and is ignored by Git, so a restart does not require scanning again.
+
+`WHATSAPP_AUTO_SEND` defaults to `false`. If explicitly enabled for a controlled demo, messages are limited by `WHATSAPP_MAX_MESSAGES_PER_REQUEST` and spaced by `WHATSAPP_MESSAGE_DELAY_MS`. The implementation records message keys and statuses to prevent retry duplicates.
+
 ## Demo notes
 
 - Online prices and close match logic use live web search results.
