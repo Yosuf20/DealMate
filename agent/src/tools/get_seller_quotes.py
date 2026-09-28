@@ -113,7 +113,7 @@ def get_seller_quotes(
 
     for idx, seller in enumerate(sellers):
         name = seller.get("seller_name", f"Local Retailer {idx+1}")
-        phone = seller.get("phone", "+91 98100 12345")
+        phone = seller.get("phone")
 
         # Check for manual overrides
         if name in manual_quotes:
