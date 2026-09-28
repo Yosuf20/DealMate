@@ -7,13 +7,19 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, PROJECT_ROOT)
 sys.path.insert(0, os.path.join(PROJECT_ROOT, "seller-backend"))
 
-from flask import Flask, render_template, request
+from flask import Flask, jsonify, render_template, request
 from sellerbackend.src.services.nearby_stores import build_nearby_stores
 from sellerbackend.src.demo_data import (
     DEMO_SELLERS, DEMO_QUOTES, DEMO_USER_LAT, DEMO_USER_LON,
     DEMO_USER_PINCODE, DEMO_QUOTE_REQUEST_ID,
 )
 from agent.src.supervisor import run_dealsetu
+from agent.src.tools.whatsapp import (
+    approve_pending_message,
+    cancel_pending_message,
+    list_pending_messages,
+    whatsapp_request,
+)
 
 app = Flask(__name__)
 
@@ -105,6 +111,7 @@ def process_result(agent_result):
         "similar_product": similar_product,
         "related_products": [],
         "upcoming_sales": [],
+        "whatsapp_messages": agent_result.get("whatsapp_messages", []),
     }
 
     # Keep the seller demo available only when the agent returned no local offers.
@@ -147,6 +154,51 @@ def results():
 
     result = process_result(raw_result)
     return render_template("results.html", result=result)
+
+
+@app.get("/whatsapp/status")
+def whatsapp_status():
+    try:
+        return jsonify(whatsapp_request("GET", "/whatsapp/status"))
+    except RuntimeError as error:
+        return jsonify({"status": "ERROR", "connected": False, "error": str(error)}), 503
+
+
+@app.post("/whatsapp/connect")
+def whatsapp_connect():
+    try:
+        return jsonify(whatsapp_request("POST", "/whatsapp/connect"))
+    except RuntimeError as error:
+        return jsonify({"error": str(error)}), 503
+
+
+@app.post("/whatsapp/disconnect")
+def whatsapp_disconnect():
+    try:
+        return jsonify(whatsapp_request("POST", "/whatsapp/disconnect"))
+    except RuntimeError as error:
+        return jsonify({"error": str(error)}), 503
+
+
+@app.get("/whatsapp/pending")
+def whatsapp_pending():
+    return jsonify({"messages": list_pending_messages()})
+
+
+@app.post("/whatsapp/pending/<message_id>/send")
+def whatsapp_send_pending(message_id):
+    try:
+        return jsonify(approve_pending_message(message_id))
+    except (RuntimeError, ValueError) as error:
+        return jsonify({"error": str(error)}), 400
+
+
+@app.post("/whatsapp/pending/<message_id>/cancel")
+def whatsapp_cancel_pending(message_id):
+    try:
+        return jsonify(cancel_pending_message(message_id))
+    except ValueError as error:
+        return jsonify({"error": str(error)}), 404
 
 
 if __name__ == "__main__":
