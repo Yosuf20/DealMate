@@ -10,12 +10,14 @@ Coordinates:
 5. Activity Log (captures real-time pipeline milestones for UI/CLI display)
 """
 
+import hashlib
 from typing import Any, Dict, List, Optional
 
 from agent.src.product_agent import run_product_agent
 from agent.src.online_agent import run_online_agent
 from agent.src.local_agent import run_local_agent
 from agent.src.tools.compare_deals import compare_deals
+from agent.src.tools.whatsapp import prepare_seller_messages
 
 
 def _normalize_online_offer(offer: Dict[str, Any]) -> Dict[str, Any]:
@@ -107,6 +109,26 @@ def run_dealsetu(user_query: str, location_override: Optional[str] = None) -> Di
         local_result = {"offers": [], "notes": f"Error: {e}"}
         local_offers = []
 
+    whatsapp_messages = []
+    sellers_with_phone = [offer for offer in local_offers if offer.get("phone")]
+    if sellers_with_phone:
+        request_id = hashlib.sha256(
+            f"{user_query}|{loc}|{prod_name}|{prod_var}".encode("utf-8")
+        ).hexdigest()[:24]
+        try:
+            whatsapp_messages = prepare_seller_messages(
+                sellers_with_phone,
+                prod_name,
+                prod_var,
+                request_id,
+            )
+            pending_count = sum(message.get("status") == "PENDING" for message in whatsapp_messages)
+            activity_log.append(
+                f"Prepared {len(whatsapp_messages)} seller WhatsApp message(s); {pending_count} awaiting approval."
+            )
+        except (RuntimeError, ValueError) as e:
+            activity_log.append(f"WhatsApp messages could not be prepared: {e}")
+
     # 4. Compare Deals & Synthesize Best Recommendation
     all_offers = online_offers + local_offers
     activity_log.append(
@@ -134,6 +156,7 @@ def run_dealsetu(user_query: str, location_override: Optional[str] = None) -> Di
         "summary": comparison.get("summary", {}),
         "online_result": online_result,
         "local_result": local_result,
+        "whatsapp_messages": whatsapp_messages,
         "activity_log": activity_log,
     }
 
