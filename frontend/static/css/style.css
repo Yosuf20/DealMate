@@ -266,6 +266,46 @@ ul { margin: 0; padding: 0; list-style: none; }
   padding: 1rem 1.5rem 1.5rem;
 }
 
+.whatsapp-panel {
+  max-width: 1200px;
+  margin: 0 auto 1rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.whatsapp-panel__header,
+.whatsapp-panel__connection,
+.seller-contact-list__heading,
+.seller-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.whatsapp-panel__header h2,
+.seller-contact-list h3 { margin: 0; }
+.eyebrow { margin: 0 0 0.2rem; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.status-pill { border-radius: 999px; padding: 0.3rem 0.7rem; font-size: 0.76rem; font-weight: 600; }
+.status-pill--online { background: rgba(47, 191, 143, 0.16); color: #16845e; }
+.status-pill--offline { background: rgba(30, 42, 56, 0.08); color: var(--text-secondary); }
+.whatsapp-panel__connection { margin-top: 1rem; }
+.whatsapp-panel__actions,
+.seller-contact__actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.button { border: 0; border-radius: 999px; padding: 0.55rem 0.9rem; font: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+.button:disabled { opacity: 0.55; cursor: wait; }
+.button--dark { background: var(--text-primary); color: white; }
+.button--quiet { background: rgba(30, 42, 56, 0.08); color: var(--text-primary); }
+.whatsapp-qr { margin-top: 1rem; text-align: center; }
+.whatsapp-qr p { margin: 0 0 0.7rem; font-size: 0.86rem; }
+.whatsapp-qr img { width: 220px; height: 220px; background: white; padding: 0.5rem; border-radius: 0.75rem; }
+.seller-contact-list { margin-top: 1.25rem; border-top: 1px solid rgba(30, 42, 56, 0.08); padding-top: 1rem; }
+.seller-contact-list__heading span { color: var(--text-secondary); font-size: 0.82rem; }
+.seller-contact { align-items: flex-start; padding: 0.9rem 0; border-bottom: 1px solid rgba(30, 42, 56, 0.06); }
+.seller-contact:last-child { border-bottom: 0; padding-bottom: 0; }
+.seller-contact p { margin: 0.3rem 0; font-size: 0.88rem; }
+.seller-contact small { color: var(--text-secondary); font-size: 0.72rem; font-weight: 600; }
+.whatsapp-empty { margin-bottom: 0; }
+
 .results-grid {
   height: 100%;
   max-width: 1200px;
@@ -289,6 +329,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 @media (max-width: 800px) {
   .app-shell { height: auto; overflow: visible; }
+  .whatsapp-panel__connection,
+  .seller-contact { align-items: flex-start; flex-direction: column; }
   .results-grid {
     height: auto;
     grid-template-columns: 1fr;
